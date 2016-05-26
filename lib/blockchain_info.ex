@@ -15,7 +15,7 @@ defmodule BlockchainInfo do
   def blocks do
      {:ok, res} = BlockchainInfo.get("/blocks?format=json")
      res.body
-     |> Poison.parse!
+     |> Poison.Parser.parse!
      |> Map.get("blocks")
   end
 
