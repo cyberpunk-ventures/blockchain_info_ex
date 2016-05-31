@@ -29,3 +29,12 @@ defmodule BlockchainInfo do
 
 
 end
+
+defmodule Block do
+   defstruct [
+      height: 0,
+      hash: "",
+      time: 0,
+      main_chain: nil
+    ]
+end
